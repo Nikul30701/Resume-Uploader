@@ -29,7 +29,7 @@ class ResumeForm(forms.ModelForm):
                   'profile_image':'Profile Image', 'my_file':'Documents'}
         widgets = {
             'name':forms.TextInput(attrs={'class':'form-control'}),
-            'dob':forms.DateInput(attrs={'class':'form-control'}),
+            'dob':forms.DateInput(attrs={'class':'form-control', 'id':'datepicker'}),
             'locality':forms.TextInput(attrs={'class':'form-control'}),
             'city':forms.TextInput(attrs={'class':'form-control'}),
             'pin':forms.NumberInput(attrs={'class':'form-control'}),
