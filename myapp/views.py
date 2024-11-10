@@ -15,3 +15,9 @@ class HomeView(View):
         if form.is_valid():
             form.save()
             return redirect('home')
+
+
+class CandidateView(View):
+    def get(self, request, pk):
+        candidate = Resume.objects.get(pk=pk)
+        return render(request, 'candidate.html', {'candidate':candidate})
