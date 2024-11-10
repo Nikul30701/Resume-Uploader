@@ -22,7 +22,7 @@ class ResumeForm(forms.ModelForm):
     class Meta:
         model = Resume
         fields = ['id','name', 'dob' , 'gender', 'locality','city',
-                    'pin','state', 'mobile', 'job_city', 'profile_image',
+                    'pin','state', 'mobile','email', 'job_city', 'profile_image',
                     'my_file']
         labels = {'name':'Full Name','dob':"Date Of Birth",
                   'pin':'Pin Code', 'mobile':'Mobile No.', 'email':'Email ID',
